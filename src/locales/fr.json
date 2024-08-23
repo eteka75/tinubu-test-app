@@ -1,0 +1,57 @@
+{
+  "BrokerPage": {
+    "Crédit solution Vanilla": "Solution de crédit Vanilla",
+    "title": "Gestion des courtiers",
+    "selected_broker": "Courtier sélectionné",
+    "search": "Nom",
+    "description": "Recherchez dans la liste des courtiers en entrant le nom, le pays, la ville ou l'adresse.",
+    "or_add_manually": "Ou ajouter manuellement",
+    "add_managing_broker": "Ajouter manuellement",
+    "legal_name": "Nom légal",
+    "address": "Adresse",
+    "country": "Pays",
+    "city": "Ville",
+    "close": "Fermer",
+    "save": "Sauvegarder",
+    "commission": "Commission (%)",
+    "commission_error_message": "La commission doit être comprise entre 0 et 100.",
+    "quotation_overview": "Aperçu des devis",
+    "submission_overview": "Aperçu des soumissions"
+  },
+  "DashabordMenu": {
+    "dashboard": "Tableau de bord",
+    "submissions": "Soumissions",
+    "quotations": "Devis",
+    "policies": "Politiques",
+    "auditLogs": "Logs d'audit"
+  },
+  "ProductPage": {
+    "name": "Produit",
+    "origin": "Origine",
+    "commercial_owner": "Propriétaire commercial",
+    "create_date": "Création",
+    "updated_date": "Mis à jour",
+    "status": "Statut"
+  },
+  "SubmissionPage": {
+    "name": "Développeur d'affaires",
+    "creation": "Création",
+    "status": "Statut"
+  },
+  "MenuTabs": {
+    "parties": "Parties",
+    "coverage": "Couverture",
+    "premium": "Prime",
+    "fees": "Frais",
+    "dictionnary": "Dictionnaire",
+    "credit_limit": "Limite de crédit",
+    "claim": "Réclamation",
+    "political_risk": "Risque politique"
+  },
+
+  "MenuActions": {
+    "Issue the submissions": "Émettre les soumissions",
+    "Issue the proposal": "Émettre la proposition",
+    "Issue the policies": "Émettre les polices"
+  }
+}

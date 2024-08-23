@@ -1,0 +1,56 @@
+{
+  "BrokerPage": {
+    "Crédit solution Vanilla": "Crédit solution Vanilla",
+    "title": "Managing broker",
+    "selected_broker": "Selected broker",
+    "search": "Name",
+    "description": "Search the list of brokers by entering name, country, city or address.",
+    "or_add_manually": "Or add manually",
+    "add_managing_broker": "Add manually",
+    "legal_name": "Legal name",
+    "address": "Address",
+    "country": "Country",
+    "city": "City",
+    "close": "Close",
+    "save": "Save",
+    "commission": "Commission (%)",
+    "commission_error_message": "The commission must be between 0 and 100.",
+    "quotation_overview": "Quotation overview",
+    "submission_overview": "Submission overview"
+  },
+  "DashabordMenu": {
+    "dashboard": "Dashboard",
+    "submissions": "Submissions",
+    "quotations": "Quotations",
+    "policies": "Policies",
+    "auditLogs": "Audit Logs"
+  },
+  "ProductPage": {
+    "name": "Product",
+    "origin": "Origin",
+    "commercial_owner": "Commercial owner",
+    "create_date": "Creation",
+    "updated_date": "Updated",
+    "status": "Status"
+  },
+  "SubmissionPage": {
+    "name": "Bussiness developper",
+    "creation": "Creation",
+    "status": "Status"
+  },
+  "MenuTabs": {
+    "parties": "Parties",
+    "coverage": "Coverage",
+    "premium": "Premium",
+    "fees": "Fees",
+    "dictionnary": "Dictionnary",
+    "credit_limit": "Credit limit",
+    "claim": "Claim",
+    "political_risk": "Political Risk"
+  },
+  "MenuActions": {
+    "Issue the submissions": "Issue the submissions",
+    "Issue the proposal": "Issue the proposal",
+    "Issue the policies": "Issue the policies"
+  }
+}
