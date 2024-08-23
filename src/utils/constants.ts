@@ -136,7 +136,7 @@ export const SelectedSubmission: SubmissionType = {
 export const brokersData: Broker[] = [
   {
     id: 0,
-    legalName: "RObco Industries",
+    legalName: "Robco Industries",
     address: "1785 Railway St, Kenora",
     city: "ON P9N 0B5",
     country: "Canada",

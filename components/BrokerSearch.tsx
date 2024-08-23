@@ -4,7 +4,6 @@ import {
   Autocomplete,
   TextField,
   Box,
-  Dialog,
   ListItem,
   ListItemText,
   Typography,
@@ -104,6 +103,15 @@ const BrokerSearch: React.FC = ({ children }: { children?: ReactNode }) => {
     }
   };
 
+  const filteredBrokers =
+    inputValue.trim() !== ""
+      ? brokers
+          .filter((broker) =>
+            broker.legalName.toLowerCase().includes(inputValue.toLowerCase())
+          )
+          .slice(0, 10)
+      : [];
+
   return (
     <Box>
       <Card>
@@ -121,7 +129,7 @@ const BrokerSearch: React.FC = ({ children }: { children?: ReactNode }) => {
         />
         <CardContent>
           <Autocomplete
-            options={brokers}
+            options={filteredBrokers}
             getOptionLabel={(option) => option.legalName}
             value={
               brokers.find((broker) => broker.id === selectedBrokerId) || null
@@ -140,17 +148,9 @@ const BrokerSearch: React.FC = ({ children }: { children?: ReactNode }) => {
                 setInputValue("");
               }
             }}
-            filterOptions={(options, state) => {
-              const filtered = options
-                .filter((option) =>
-                  option.legalName
-                    .toLowerCase()
-                    .includes(state.inputValue.toLowerCase())
-                )
-                .slice(0, 10);
-
-              if (state.inputValue !== "") {
-                filtered.push({
+            filterOptions={(options) => {
+              if (inputValue.trim() !== "") {
+                options.push({
                   legalName: t("or_add_manually"),
                   id: -1,
                   address: "",
@@ -158,8 +158,7 @@ const BrokerSearch: React.FC = ({ children }: { children?: ReactNode }) => {
                   country: "",
                 } as Broker);
               }
-
-              return filtered;
+              return options;
             }}
             renderOption={(props, option) => (
               <ListItem
